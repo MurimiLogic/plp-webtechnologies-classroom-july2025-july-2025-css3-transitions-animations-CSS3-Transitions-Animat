@@ -1,0 +1,826 @@
+/*Week 7 styling file for the hotel website*/
+
+article, aside, details, dl, figcaption, figure, footer, header, main, nav, section {
+	display: block;
+}
+
+
+
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	height: 100%;
+	font-size: 14px;
+	background-color: #953e3c;
+	margin: 0px auto;
+}
+html, button, input, select, textarea {
+	font-family: serif;
+	color: #222;
+}
+body {
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.4;
+	margin-left: auto;
+	margin-right: auto;
+	width: 81.9%;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	clear: none;
+	float: none;
+	min-height: 100%;
+	background-color: white;
+}
+img, object, embed, video {
+	max-width: 100%;
+}
+
+
+/* =============================================
+   Hypertext links
+   =============================================
+*/
+
+a {
+	color: #00e;
+}
+a:visited {
+	color: #551a8b;
+}
+a:hover {
+	color: #06e;
+}
+a:focus {
+	outline: thin dotted;
+}
+a:hover, a:active {
+	outline: 0;
+}
+
+
+/* =============================================
+   Default font styles
+   =============================================
+*/
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+b, strong {
+	font-weight: bold;
+}
+blockquote {
+	margin: 1em 40px;
+}
+dfn {
+	font-style: italic;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+ins {
+	background: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+mark {
+	background: #ff0;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+pre, code, kbd, samp {
+	font-family: monospace, serif;
+	_font-family: 'courier new', monospace;
+	font-size: 1em;
+}
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+q {
+	xquotes: none;
+}
+q:before, q:after {
+	xcontent: "";
+	xcontent: none;
+}
+small {
+	font-size: 85%;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+
+
+/* =============================================
+   Default list styles
+   =============================================
+*/
+
+ul, ol {
+	margin: 1em 0;
+	padding: 0 0 0 40px;
+}
+dd {
+	margin: 0 0 0 40px;
+}
+nav ul, nav ol {
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* =============================================
+   Default styles for images and media
+   =============================================
+*/
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+figure {
+	margin: 0;
+}
+audio, canvas, video {
+	display: inline-block;
+*display: inline;
+*zoom: 1;
+}
+
+/* =============================================
+   Default styles for web forms
+   =============================================
+*/
+
+form {
+    margin: 0;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+    white-space: normal;
+}
+
+
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+
+button, input {
+    line-height: normal;
+}
+
+button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+    appearance: button; /* Standard property */
+}
+
+
+button[disabled], 
+input[disabled] {
+    cursor: not-allowed; /
+}
+
+input[type="checkbox"], 
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+   
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    appearance: textfield; /* Standard property */
+    box-sizing: border-box; /* Standardized box-sizing */
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none; 
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+
+input:valid, 
+textarea:valid {
+    /
+}
+
+input:invalid, 
+textarea:invalid {
+    background-color: #f0dddd;
+}
+
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: 2px solid #0066cc; 
+    outline-offset: 2px;
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =============================================
+   Default styles for web tables
+   =============================================
+*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td, th {
+	vertical-align: top;
+}
+
+/* =============================================
+   Base layout styles
+   =============================================
+*/
+
+nav {
+	width: 25%;
+	float: left;
+	margin: 6% 2% 0% 0%;
+}
+article {
+	width: 73%;
+	float: left;
+	font-size: 0.8em;
+	text-align: left;
+}
+
+nav ul li {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 0.8em;
+}
+
+nav ul li a {
+	color: #222;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 8%;
+}
+nav ul li a:visited {
+	color: #222;
+}
+nav ul li a:hover {
+	background-color: #b34a48;
+	color: white;
+}
+nav ul li a:focus {
+	outline: thin dotted;
+}
+nav ul li a:hover, nav ul li a:active {
+	outline: 0;
+}
+body h1 {
+	margin: 1%;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 1.5em;
+}
+
+body article h1 {
+	font-size: 1.15em;
+}
+
+header img {
+	float: none;
+	width: 96%;
+	margin: 2% 2% 0% 2%;
+}
+body p, body address {
+	margin: 3.5% 1%;
+	font-size: 1em;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-style: normal;
+	height: 100%;
+}
+dl {
+	margin-left: 2%;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+dt {
+	display: block;
+	margin: 0;
+	text-indent: 0;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(168, 168, 168,1.00);
+}
+dd {
+	display: block;
+	margin: 0 0 3% 3%;
+	text-indent: 0;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.6em;
+	margin-top: 4%;
+	border-top: 3px outset #cf7b79;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	clear: both;
+	padding-bottom: 20px;
+}
+
+article aside h1 {
+	display: none;
+}
+
+article div {
+	border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+article div:first-of-type {
+	margin-top: 30px;
+}
+
+article div h1 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+article p, article address {font-family: "Times New Roman", Times, serif;}
+
+
+
+/* Events page specific styles */
+article:has(> div > h1) {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+article:has(> div > h1) > div {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+article:has(> div > h1) > div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #b34a48;
+    transition: width 0.3s ease;
+}
+
+article:has(> div > h1) > div:hover::before {
+    width: 8px;
+}
+
+article:has(> div > h1) > div h1 {
+    color: #b34a48;
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+    border-bottom: none;
+}
+
+article:has(> div > h1) > div p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+/* Events grid for larger screens */
+@media only screen and (min-width: 481px) {
+    article:has(> div > h1) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    article:has(> div > h1) > div {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    article:has(> div > h1) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    article:has(> div > h1) > div {
+        padding: 20px;
+    }
+}
+
+/* =============================================
+   Enhanced Animations and Interactions
+   =============================================
+*/
+
+/* Smooth transitions for all elements */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Logo animation */
+header img {
+    animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navigation enhancements */
+nav ul li a {
+    position: relative;
+    overflow: hidden;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #b34a48;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+    width: 80%;
+}
+
+/* Menu item animations */
+dt {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+dt:hover {
+    background-color: #ffdcdb;
+    padding-left: 20px;
+}
+
+dd {
+    opacity: 1;
+    max-height: none;
+    transition: all 0.3s ease;
+}
+
+dt.active + dd {
+    background-color: #ffdcdb;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Event cards enhanced animations */
+article:has(> div > h1) > div {
+    cursor: pointer;
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article:has(> div > h1) > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Button styles */
+.btn {
+    background: #b34a48;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 0.9em;
+}
+
+.btn:hover {
+    background: #953e3c;
+    transform: translateY(-2px);
+}
+
+/* Loading animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ffdcdb;
+    border-radius: 50%;
+    border-top-color: #b34a48;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Event day indicators */
+article:has(> div > h1) > div[data-day="monday"]::before { background: #ff6b6b; }
+article:has(> div > h1) > div[data-day="tuesday"]::before { background: #4ecdc4; }
+article:has(> div > h1) > div[data-day="wednesday"]::before { background: #45b7d1; }
+article:has(> div > h1) > div[data-day="thursday"]::before { background: #96ceb4; }
+article:has(> div > h1) > div[data-day="friday"]::before { background: #feca57; }
+article:has(> div > h1) > div[data-day="saturday"]::before { background: #ff9ff3; }
+article:has(> div > h1) > div[data-day="sunday"]::before { background: #54a0ff; }
+
+/* Pulse animation for interactive elements */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.anim-pulse {
+    animation: pulse 0.5s ease-in-out;
+}
+
+/* Bounce animation for interactive elements */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+.anim-bounce {
+    animation: bounce 0.6s ease;
+}
+
+/* Slide in animation for notifications */
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* =============================================
+   Tablet layout styles 
+   =============================================
+*/
+
+@media only screen and (min-width: 481px) {
+html, body {
+	font-size: 16px;
+}
+
+body {
+	width: 89.9%;
+	padding-left: 1.55%;
+	padding-right: 1.55%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+
+header h1 {
+   font-size: 2.2em;
+}
+
+body article h1 {
+   font-size: 1.75em;
+}
+
+article {
+	width: 94%;
+	float: none;
+	margin: 0px auto;
+}
+dl#ct_locations {
+	width: 57%;
+	margin: 0px 0px 0px 20px;
+}
+dl {
+	width: 90%;
+    margin: 0 auto;
+	text-align: left;
+}
+article img {
+	float: right;
+	width: 40%;
+	margin: 0% 2% 2% 2%;
+}
+nav ul li {
+	display: table-cell;
+	width: 15%;
+	text-align: center;
+	margin-right: 2%;
+	border: thin solid rgba(127,96,17,1.00);
+	border-collapse: collapse;
+}
+nav ul li a {
+	margin-bottom: 0;
+}
+nav {
+	display: table;
+	width: 96%;
+	margin: 0 auto;
+	float: none;
+}
+nav ul {
+	display: table-row;
+	margin: 0;
+}
+nav ul li:last-of-type {
+	margin-right: 0%;
+}
+
+article ul {
+	margin-top: -20px;
+}
+
+article aside {
+	float: right;
+	margin: 0 0 20px 20px;
+	padding: 1%;
+	border: 1px solid rgb(251, 151, 151);
+	width: 35%;
+	font-size: 0.9em;
+	background-color: #ffdcdb;
+}
+
+article aside h1 {
+	display: block;
+	font-size: 1em;
+	text-align: center;
+	border-bottom: 1px solid rgb(111, 111, 111);
+}
+
+article div {
+	float: left;
+	width: 30.3%;
+	margin: 0% 1% 2% 1%;
+	border: 1px solid rgb(151, 151, 151);
+}
+
+article div:first-of-type {
+	margin-top: 0%;
+}
+
+article div h1 {
+	text-align: right;
+	font-weight: normal;
+	font-size: 1em;
+	border-bottom: 1px solid rgb(151, 151, 151);
+	background-color: #ffdcdb;
+}
+
+article div p {
+	font-size: 0.85em;
+	text-align: left;
+}
+
+footer {
+	font-size: 0.9em;
+}
+}
+
+/* =============================================
+   Desktop layout styles (769px and larger)
+   =============================================
+*/
+
+@media only screen and (min-width: 769px) {
+html, body {
+	font-size: 20px;
+}
+
+body {
+	width: 88.2%;
+	max-width: 900px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: 0px auto auto auto;
+	clear: none;
+	float: none;
+	-moz-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+	box-shadow: rgba(31, 61, 31, 0.9) 20px 0px 25px,  rgba(31, 61, 31, 0.9) -20px 0px 25px;
+}
+
+article div h1 {
+	font-size: 1.1em;
+}
+
+article div p {
+	font-size: 0.95em;
+}
+
+/* Enhanced events grid for desktop */
+article:has(> div > h1) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+article:has(> div > h1) > div {
+    padding: 25px;
+}
+
+}
